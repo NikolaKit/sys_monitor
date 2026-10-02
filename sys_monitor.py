@@ -20,18 +20,18 @@ def check_system_resources():
     ram_total_gb = round(ram_info.total / (1024**3), 2)
 
     print("--- SYSTEM STATUS ---")
-    print(f"🖥️️  CPU Usage: {cpu_usage}%")
-    print(f"🧠 RAM Usage: {ram_usage}% ({ram_used_gb} GB / {ram_total_gb} GB)")
+    print(f"CPU Usage: {cpu_usage}%")
+    print(f"RAM Usage: {ram_usage}% ({ram_used_gb} GB / {ram_total_gb} GB)")
 
     # Send notification if CPU usage exceeds threshold
     if cpu_usage > 80:
-        print("⚠️ HIGH CPU USAGE DETECTED!")
-        send_alert("⚠️ High CPU Usage!", f"CPU load is at {cpu_usage}%!")
+        print("HIGH CPU USAGE DETECTED!")
+        send_alert("High CPU Usage!", f"CPU load is at {cpu_usage}%!")
 
     # Send notification if RAM usage exceeds threshold
     if ram_usage > 85:
-        print("⚠️ HIGH RAM USAGE DETECTED!")
-        send_alert("⚠️ High RAM Usage!", f"RAM load is at {ram_usage}%!")
+        print("HIGH RAM USAGE DETECTED!")
+        send_alert("High RAM Usage!", f"RAM load is at {ram_usage}%!")
 
 
 if __name__ == "__main__":
