@@ -17,5 +17,5 @@ A simple, real-time Python system monitoring tool designed to track CPU and RAM 
 
 1. Clone this repository:
    ```bash
-   git clone [https://github.com/DzoniBRO/sys_monitor.git](https://github.com/DzoniBRO/sys_monitor.git)
+   git clone [https://github.com/NikolaKit/sys_monitor.git](https://github.com/NikolaKit/sys_monitor.git)
    cd sys_monitor
